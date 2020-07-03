@@ -7,11 +7,12 @@
     <title>{{ title }}</title>
     {% include "social.njk" %}
   </head>
-  <body class="container mx-auto mb-12 lg:max-w-4xl text-gray-700">
-    {% include "header.njk" %}
+  <body class="container mx-auto mb-12 lg:max-w-full text-gray-700">
+    {% include "navbar.njk" %}
     <div class="content leading-relaxed">
       {{ content | safe }}
     </div>
+    {% include "footer.njk" %}
     {% set js %}
       {% include "js/core.js" %}
       {% include "js/hello.js" %}

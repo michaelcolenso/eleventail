@@ -1,7 +1,14 @@
-const { DateTime }  = require('luxon');
-const util          = require('util');
+const { DateTime } = require('luxon');
+const util = require('util');
+const svgContents = require("eleventy-plugin-svg-contents");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-module.exports = function(eleventyConfig) {
+
+module.exports = function (eleventyConfig) {
+
+  // Add Plugins
+  eleventyConfig.addPlugin(svgContents);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
 
   // Layout aliases for convenience
@@ -26,14 +33,14 @@ module.exports = function(eleventyConfig) {
   });
 
   // Grab excerpts and sections from a file
-  eleventyConfig.addFilter("section", require("./src/utils/section.js") );
+  eleventyConfig.addFilter("section", require("./src/utils/section.js"));
 
   // compress and combine js files
-  eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
+  eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js"));
 
   // minify the html output when running in prod
   if (process.env.NODE_ENV == "production") {
-    eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
+    eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js"));
   }
 
   // Static assets to pass through
@@ -41,16 +48,16 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/site/images");
   eleventyConfig.addPassthroughCopy("./src/site/css");
 
-  return  {
+  return {
     dir: {
       input: "src/site",
       includes: "_includes",
       output: "dist"
     },
     passthroughFileCopy: true,
-    templateFormats : ["njk", "md"],
-    htmlTemplateEngine : "njk",
-    markdownTemplateEngine : "njk",
+    templateFormats: ["njk", "md"],
+    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: "njk",
   };
 
 };
