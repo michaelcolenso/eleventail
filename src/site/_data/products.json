@@ -3,7 +3,7 @@
     "sku": "SHIRT001",
     "name": "***EXCLUSIVE*** Copilot",
     "description": "Who's your co-pilot?",
-    "image": "https://github.com/michaelcolenso/stripe-checkout-netlify/blob/master/functions/data/Ari_V_Neck_Front_Back-med.png?raw=true",
+    "image": "http://github.com/michaelcolenso/stripe-checkout-netlify/blob/master/functions/data/Ari_V_Neck_Front_Back-med.png?raw=true",
     "amount": 3000,
     "currency": "USD"
   }

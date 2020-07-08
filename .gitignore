@@ -1,5 +1,6 @@
 # dependecies installed by npm
 /node_modules
+/src/functions/node_modules
 
 # build artefacts
 /dist
@@ -7,8 +8,12 @@
 
 # secrets
 .env
+.env.*
 
 # macOS related files
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Local Netlify folder
+.netlify
