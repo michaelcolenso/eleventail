@@ -1,6 +1,6 @@
 [build]
   base = "/"
-  command = "cd /opt/build/repo/src/functions && npm i && cd / && npm i && npm run build"
+  command = "npm run build && cd src/functions && npm i && cd /"
   publish = "dist"
   functions = "./src/functions"
 
