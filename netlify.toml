@@ -1,6 +1,6 @@
 [build]
   base = "/"
-  command = "cd /opt/build/repo/src/functions && npm i && cd /opt/build/repo/ && npm i && npm run build"
+  command = "cd /opt/build/repo/src/functions && npm i && cd / && npm i && npm run build"
   publish = "dist"
   functions = "./src/functions"
 
@@ -21,6 +21,3 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
-
-[context.production]
-  environment = { NODE_VERSION = "10.15.3", NODE_ENV = "production" }
