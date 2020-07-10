@@ -1,10 +1,11 @@
 [
   {
     "sku": "SHIRT001",
-    "name": "***EXCLUSIVE*** Copilot",
-    "description": "Who's your co-pilot?",
-    "image": "http://github.com/michaelcolenso/stripe-checkout-netlify/blob/master/functions/data/Ari_V_Neck_Front_Back-med.png?raw=true",
-    "amount": 3000,
+    "name": "ARI TAKE THE WHEEL",
+    "tagline": "He considers all the things.",
+    "description": "Ari Shapiro is your new bicycle.",
+    "image": "/images/Ari_V_Neck_Front_Back-med.png",
+    "amount": 30,
     "currency": "USD"
   }
 ]
