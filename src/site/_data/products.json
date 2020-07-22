@@ -1,11 +1,10 @@
-[
-  {
+[{
     "sku": "SHIRT001",
+    "price": "price_1GsMgeLddOBTWdTaz1MWuWT3",
     "name": "ARI TAKE THE WHEEL",
     "tagline": "He considers all the things.",
-    "description": "Ari Shapiro is your new bicycle.",
+    "description": "Ari Shapiro is my copilot.",
     "image": "/images/Ari_V_Neck_Front_Back-med.png",
-    "amount": 30,
+    "amount": 33,
     "currency": "USD"
-  }
-]
+}]

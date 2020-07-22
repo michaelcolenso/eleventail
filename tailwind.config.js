@@ -1,13 +1,12 @@
 module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        'delite-orange': '#FCBF49'
-      }
-    }
-  },
-  variants: {},
-  plugins: [
-    require('@tailwindcss/custom-forms'),
-  ]
+    theme: {
+        boxShadow: {
+            inner: 'inset 0 -9px 0 #FCBF49'
+        }
+
+    },
+    variants: {},
+    plugins: [
+        require('@tailwindcss/custom-forms'),
+    ]
 }

@@ -1,10 +1,32 @@
 
-      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+       {% set linkList = [
+      {
+        "url": "/about",
+        "text": "About"
+      },  {
+        "url": "/shows",
+        "text": "Shows"
+      },
+      {
+        "url": "/merch",
+        "text": "Merch"
+      },
+      {
+        "url": "/events",
+        "text": "Events"
+      },
+      {
+        "url": "/consulting",
+        "text": "Consulting"
+      },
+      {
+        "url": "/contact",
+        "text": "Contact"
+      }
+    ]
+ %}
   {% for link in linkList %}
-    <li class="nav-item">
-          <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="{{ link.url }}">
+          <a class="mr-5 p-2 text-xl border-b-8 transition-all duration-150 ease-in-out border-opacity-50 border-orange-500 bg-transparent bg-opacity-0 hover:bg-orange-500 hover: bg-opacity-75 hover:border-bottom-0" href="{{ link.url }}">
             {{ link.text }}
           </a>
-    </li>
   {% endfor %}
-</ul>

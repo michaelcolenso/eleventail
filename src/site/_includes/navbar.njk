@@ -1,38 +1,13 @@
-<nav class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg mb-3 bg-transparent">
-  <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-    <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
-      <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-black" href="#pablo">
-        {{ "/src/site/images/logo-delite.svg" | svgContents("w-40 h-auto") | safe }}
-      </a>
-      <button class="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
-        <i class="fas fa-bars">\\\</i>
-      </button>
-    </div>
-    <div class="lg:flex flex-grow items-center hidden" id="example-collapse-navbar">
-    {% set linkList = [
-      {
-        "url": "/about",
-        "text": "About"
-      }, {
-        "url": "/merch",
-        "text": "Merch"
-      }, {
-        "url": "/blog",
-        "text": "Blog"
-      }, {
-        "url": pkg.repository.url,
-        "text": "GitHub"
-      }
-    ]
- %}
-    {% include "navigation-links.njk" %}
-      </div>
+<header class="w-auto sticky bg-transparent top-10 text-gray-700 body-font">
+  <div class="container bg-white bg-opacity-50 mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              {{ "/src/site/images/logo-delite.svg" | svgContents("w-auto h-32") | safe }}
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+ {% include "navigation-links.njk" %}
+    </nav>
+ 
+  </div>
+</header>
 
-  </nav>
-   
-<script>
-  function toggleNavbar(collapseID){
-    document.getElementById(collapseID).classList.toggle("hidden");
-    document.getElementById(collapseID).classList.toggle("flex");
-  }
-</script>
+ 
