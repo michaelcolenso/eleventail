@@ -1,59 +1,40 @@
 ---
-title: ElevenTail - About
+title: DeLite Media - About
 layout: default
 ---
-
-<section>
-  <h1 class="heading">What does ElevenTail give me?</h1>
-  <p>
-    ElevenTail is the starting point <a href="https://twitter.com/philhawksworth">that I use</a> when building a site where I want to have:
-  </p>
-  <ul>
-    <li><a href="https://11ty.dev">Eleventy</a> for site generation configured with some common conventions like <a href="/blog">blog</a> collection</li>
-    <li><a href="https://tailwindcss.com">Tailwind CSS</a> for a utility-based CSS pipeline</li>
-    <li><a href="https://www.purgecss.com/">Purge CSS</a> for stripping unused CSS and minifying the result</li>
-    <li><a href="https://www.npmjs.com/package/uglify-js">Uglify JS</a> for basic JavaScript build pipeline</li>
-    <li>Serverless functions development pipeline via <a href="https://netlify.com/products/functions">Netlify Functions</a></li>
-    <li>Local support of <a href="https://netlify.com/products/edge">Netlify CDN</a> abilities such as <a href="https://docs.netlify.com/routing/redirects/redirect-options/">redirects</a> and <a href="https://docs.netlify.com/routing/headers">custom headers</a></li>
-  </ul>
-  <p>
-    ElevenTail is not a product, it's just something I maintain to use for myself. If you think it might be useful to you too, then great! Suggestions and contributions as pull requests are also welcome.
-  </p>
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500">
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Sonari Glinton</h2>
+            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+          </div>
+        </div>
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4">DeLite! Media, headquartered in Hollywood, California, is a production company with a network of award-winning podcast and radio producers across the U.S. Acclaimed journalist <a class="" href="/">Sonari Glinton</a> founded DeLite! Media as an answer to two problems plaguing news and informational content providers: declining interest and trust from audiences and a dearth of diverse voices in newsrooms.</p>
+      <p class="leading-relaxed text-lg mb-4">Through collaboration with journalists and producers from underrepresented groups, DeLite! Media moves journalism and storytelling forward by foregoing old newsroom hierarchies and pay structures in order to increase appeal to top-tier talent and deliver captivating content to new audiences. With our employee-owned programming model, producers and journalists own part of the shows they work on, protecting the future of journalism and allowing storytellers to thrive.
+      </p>
+          <a class="text-indigo-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h1 class="heading">How do I use it?</h1>
-  <p>To get started using ElevenTail for a site of your own:</p>
-  <ol>
-    <li>Initiate a new project from this <a href="https://github.com/philhawksworth/eleventail/generate" target="_BLANK" rel="noopener">GitHub Template</a></li>
-    <li>Clone a copy to your local machine: <code>git clone YOUR_REPO_URL</code></li>
-    <li>Install the dependencies: <code>npm install</code> </li>
-    <li>Run the local build environment: <code>netlify dev</code></li>
-  </ol>
-  <p>This will give you a local build and a local server which detects changes to give live rebuilds and reloads.</p>
-  <p>If you are planning to deploy your site to Netlify, you will also automatically get local support for the Netlify redirects API by running your local build with the command <code>netlify dev</code>.</p>
-</section>
-
-<section>
-  <h1 class="heading">Super speedy start</h1>
-  <p>
-    To create and deploy a new site from this template, and then start customising, you can click the button below which will:
-  </p>
-  <ul>
-    <li>Clone <a href="{{ pkg.repository.url }}">this repo</a> to a new repo in your own GitHub account</li>
-    <li>Create a new Netlify site linked to your new repo</li>
-    <li>Set up a CI/CD pipeline for your new site</li>
-  </ul>
-  <a class="bg-teal-500 p-4 mb-6 inline-block font-semibold border-b-2 text-white rounded shadow-lg hover:bg-teal-400" href="https://app.netlify.com/start/deploy?repository={{ pkg.repository.url }}">Clone and set up a new site on Netlify</a>
-  <p>
-    This is the process I use to get a new site with all of its deployment and hosting set up as quickly as possible.
-  </p>
-</section>
-
-<section>
-    <h1 class="heading" id="possum">What the possum?</h1>
-    <p>
-      The possum became a playful mascot for Eleventy thanks to the wonderful James Williamson. He and Zach Leatherman,   Eleventy's creator, shared a playful sense of humor which culminated in this marvelously silly icon. Following the sad loss of James, <a href="https://www.11ty.dev/news/logo-homage/">Zach commissioned</a> a more formal possum illustration who's reminiscence of an O'Reilly book cover illustration inspired the design of this little site.
-    </p>
-    <img src="/images/possum-balloon.png" alt="The Elventy Possum Balloon" class="w-24 mt-6">
-  </section>
+ 
