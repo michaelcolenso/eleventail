@@ -6,7 +6,7 @@ const svgContents = require("eleventy-plugin-svg-contents");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 
     // Add Plugins
     eleventyConfig.addPlugin(svgContents);
@@ -35,7 +35,7 @@ module.exports = function(eleventyConfig) {
     });
 
     // Shortcode
-    eleventyConfig.addShortcode("version", function() {
+    eleventyConfig.addShortcode("version", function () {
         return String(Date.now());
     });
 
@@ -54,6 +54,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/site/fonts");
     eleventyConfig.addPassthroughCopy("./src/site/images");
     eleventyConfig.addPassthroughCopy("./src/site/css");
+    eleventyConfig.addPassthroughCopy("./admin");
+
     eleventyConfig.addPassthroughCopy({
         "./node_modules/alpinejs/dist/alpine.js": "./src/site/_includes/js/alpine.js",
     });
