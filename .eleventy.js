@@ -3,6 +3,7 @@ const {
 } = require('luxon');
 const util = require('util');
 const svgContents = require("eleventy-plugin-svg-contents");
+const embedEverything = require("eleventy-plugin-embed-everything");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 
@@ -11,11 +12,13 @@ module.exports = function (eleventyConfig) {
     // Add Plugins
     eleventyConfig.addPlugin(svgContents);
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
+    eleventyConfig.addPlugin(embedEverything);
+
 
 
     // Layout aliases for convenience
     eleventyConfig.addLayoutAlias('default', 'layouts/base.njk');
-    eleventyConfig.addLayoutAlias('conf', 'layouts/conf.njk');
+    eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
     // a debug utility
     eleventyConfig.addFilter('dump', obj => {
