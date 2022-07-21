@@ -37,6 +37,6 @@
     "@11ty/eleventy-navigation": "^0.1.5",
     "alpinejs": "^2.4.1",
     "puppeteer": "^5.2.1",
-    "terser": "^4.8.0"
+    "terser": "^4.8.1"
   }
 }
